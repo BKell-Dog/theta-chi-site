@@ -21,6 +21,7 @@ body {
   color: var(--white);
   font-family: 'Cinzel', serif;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
@@ -50,6 +51,12 @@ body::after {
   z-index: 0;
 }
 
+footer {
+  display: flex;
+  flex-direction: row;
+  margin: 1em 0;
+}
+
 .stage {
   position: relative;
   z-index: 1;
@@ -66,12 +73,9 @@ body::after {
   color: var(--red);
   letter-spacing: -0.01em;
   line-height: 0.9;
-  text-shadow:
-    0 0  60px rgba(176, 28, 46, 0.28),
-    0 0 120px rgba(176, 28, 46, 0.12);
   opacity: 0;
   transform: translateY(30px);
-  animation: rise 2.4s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
+  animation: rise 1s cubic-bezier(0.16, 1, 0.3, 1) 0.4s forwards;
 }
 
 /* Thin red rule */
@@ -82,7 +86,7 @@ body::after {
   background: var(--red);
   opacity: 0;
   margin: clamp(1.2rem, 3.5vw, 2.4rem) auto;
-  animation: expand 1.1s ease 2.2s forwards;
+  animation: expand 1s ease 1.65s forwards;
 }
 
 /* ΕΨ — chapter Greek letters */
@@ -95,20 +99,20 @@ body::after {
   padding-left: 0.6em;
   opacity: 0;
   transform: translateY(14px);
-  animation: rise 1.8s cubic-bezier(0.16, 1, 0.3, 1) 2.6s forwards;
+  animation: rise 0.5s cubic-bezier(0.16, 1, 0.3, 1) 1.5s forwards;
 }
 
 /* "Epsilon Psi Chapter" label */
 .chapter-label {
   font-weight: 400;
   font-size: clamp(0.55rem, 1.1vw, 0.8rem);
-  color: var(--red);
+  color: var(--white);
   letter-spacing: 0.45em;
   padding-left: 0.45em;
   text-transform: uppercase;
   margin-top: 0.75rem;
   opacity: 0;
-  animation: fadeOnly 1.4s ease 3.6s forwards;
+  animation: fadeOnly 1s ease 3s forwards;
 }
 
 /* ── Keyframes ── */

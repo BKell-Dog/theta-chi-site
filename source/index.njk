@@ -7,3 +7,12 @@ layout: page.njk
   <span class="letters-chapter">ΕΨ</span>
   <span class="chapter-label">Epsilon Psi Chapter</span>
 </div>
+{% if site.socialMedia %}
+<footer class="social-bar">
+  {% if site.socialMedia.facebook %}
+  <a href="{{ site.socialMedia.facebook }}" class="social-link" aria-label="Facebook">
+    <img src="/assets/facebook.png" height="48" width="48" />
+  </a>
+  {% endif %}
+</footer>
+{% endif %}
