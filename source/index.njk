@@ -6,13 +6,24 @@ layout: page.njk
   <span class="divider"></span>
   <span class="letters-chapter">ΕΨ</span>
   <span class="chapter-label">Epsilon Psi Chapter</span>
-</div>
-{% if site.socialMedia %}
-<footer class="social-bar">
-  {% if site.socialMedia.facebook %}
-  <a href="{{ site.socialMedia.facebook }}" class="social-link" aria-label="Facebook">
-    <img src="/assets/facebook.png" height="48" width="48" />
-  </a>
+
+  {% if site.socialMedia %}
+  <footer class="social-bar">
+    {% if site.socialMedia.facebook %}
+    <a href="{{ site.socialMedia.facebook }}" class="social-link" aria-label="Facebook">
+      <img src="/assets/facebook.png" height="36" width="36" />
+    </a>
+    {% endif %}
+    {% if site.socialMedia.email %}
+    <a href="mailto:{{ site.socialMedia.email }}" class="social-link" aria-label="Email">
+      <img src="/assets/email.png" height="36" width="36" />
+    </a>
+    {% endif %}
+    {% if site.socialMedia.mailchimp %}
+    <a href="{{ site.socialMedia.mailchimp }}" class="social-link" aria-label="Mailchimp">
+      <img src="/assets/mailchimp.png" height="36" width="36" />
+    </a>
+    {% endif %}
+  </footer>
   {% endif %}
-</footer>
-{% endif %}
+</div>

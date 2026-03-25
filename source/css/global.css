@@ -54,7 +54,10 @@ body::after {
 footer {
   display: flex;
   flex-direction: row;
-  margin: 1em 0;
+  gap: 1.3em;
+  margin: 1.5em 0;
+  opacity: 0;
+  animation: rise 1s ease 3s forwards;
 }
 
 .stage {
@@ -86,7 +89,7 @@ footer {
   background: var(--red);
   opacity: 0;
   margin: clamp(1.2rem, 3.5vw, 2.4rem) auto;
-  animation: expand 1s ease 1.65s forwards;
+  animation: expand 0.65s ease 1.35s forwards;
 }
 
 /* ΕΨ — chapter Greek letters */
@@ -99,7 +102,7 @@ footer {
   padding-left: 0.6em;
   opacity: 0;
   transform: translateY(14px);
-  animation: rise 0.5s cubic-bezier(0.16, 1, 0.3, 1) 1.5s forwards;
+  animation: rise 0.35s cubic-bezier(0.16, 1, 0.3, 1) 1.1s forwards;
 }
 
 /* "Epsilon Psi Chapter" label */
@@ -112,7 +115,7 @@ footer {
   text-transform: uppercase;
   margin-top: 0.75rem;
   opacity: 0;
-  animation: fadeOnly 1s ease 3s forwards;
+  animation: fadeOnly 0.8s ease 2.2s forwards;
 }
 
 /* ── Keyframes ── */
