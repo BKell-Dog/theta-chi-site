@@ -15,7 +15,7 @@ script: home.js
   </div>
   {% endif %}
 </div>
-<div class="undergrads" id="undergrads-button">
+<div class="undergrads desktop" id="undergrads-button">
   <button onClick="undergradBtn()">UNDERGRADS</button>
 </div>
 <div class="stage">
@@ -23,28 +23,12 @@ script: home.js
   <span class="divider"></span>
   <span class="letters-chapter">ΕΨ</span>
   <span class="chapter-label">Epsilon Psi Chapter</span>
-
-  {% if site.socialMedia %}
-  <footer class="social-bar">
-    {% if site.socialMedia.facebook %}
-    <a href="{{ site.socialMedia.facebook }}" class="social-link" aria-label="Facebook">
-      <img src="/assets/facebook.png" height="36" width="36" />
-    </a>
-    {% endif %}
-    {% if site.socialMedia.email %}
-    <a href="mailto:{{ site.socialMedia.email }}" class="social-link" aria-label="Email">
-      <img src="/assets/email.png" height="36" width="36" />
-    </a>
-    {% endif %}
-    {% if site.socialMedia.mailchimp %}
-    <a href="{{ site.socialMedia.mailchimp }}" class="social-link" aria-label="Mailchimp">
-      <img src="/assets/mailchimp.png" height="36" width="36" />
-    </a>
-    {% endif %}
-  </footer>
-  {% endif %}
+  <div class="mobile" id="mobile-button-container">
+    <button onClick="undergradBtnMobile()">UNDERGRADS</button>
+    <button onClick="alumniBtnMobile()">ALUMNI</button>
+  </div>
 </div>
-<div class="alumni" id="alumni-button">
+<div class="alumni desktop" id="alumni-button">
   <button onClick="alumniBtn()">ALUMNI</button>
 </div>
 <div class="alumni hidden" id="alumni-section">
