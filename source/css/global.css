@@ -155,6 +155,18 @@ button {
   }
 }
 
+@media (max-width: 415px) {
+  .stage {
+    margin-right: 2em;
+  }
+}
+
+@media (max-width: 310px) {
+  .stage {
+    margin-right: 3em;
+  }
+}
+
 
 /* ── Keyframes ── */
 
