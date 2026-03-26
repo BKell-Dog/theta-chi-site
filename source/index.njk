@@ -1,6 +1,23 @@
 ---
 layout: page.njk
+script: home.js
 ---
+
+<div class="undergrads hidden" id="undergrads-section">
+  {% if site.undergradSocialMedia %}
+  <p>Make sure you follow our social media</p>
+  <div class="social-bar">
+  {% for name, data in site.undergradSocialMedia %}
+    <a href="{{ data.url }}" class="social-link" aria-label="{{ name }}">
+      <img src="{{ data.icon }}" height="36" width="36" />
+    </a>
+  {% endfor %}
+  </div>
+  {% endif %}
+</div>
+<div class="undergrads" id="undergrads-button">
+  <button onClick="undergradBtn()">UNDERGRADS</button>
+</div>
 <div class="stage">
   <span class="letters-primary">ΘΧ</span>
   <span class="divider"></span>
@@ -25,5 +42,20 @@ layout: page.njk
     </a>
     {% endif %}
   </footer>
+  {% endif %}
+</div>
+<div class="alumni" id="alumni-button">
+  <button onClick="alumniBtn()">ALUMNI</button>
+</div>
+<div class="alumni hidden" id="alumni-section">
+  {% if site.alumniSocialMedia %}
+  <p>Make sure you follow our social media</p>
+  <div class="social-bar">
+  {% for name, data in site.alumniSocialMedia %}
+    <a href="{{ data.url }}" class="social-link" aria-label="{{ name }}">
+      <img src="{{ data.icon }}" height="36" width="36" />
+    </a>
+  {% endfor %}
+  </div>
   {% endif %}
 </div>

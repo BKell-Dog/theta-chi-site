@@ -1,6 +1,26 @@
 {
-	"socialMedia": {
-		"facebook": "https://www.facebook.com/groups/ThetachiEpsilonpsialumni/",
-		"email": "oxnjitalumni63@gmail.com"
+	"undergradSocialMedia": {
+		"facebook": {
+			"url": "https://www.facebook.com/ThetaChiNJIT/",
+			"icon": "/assets/facebook.png"
+		},
+		"instagram": {
+			"url": "https://www.instagram.com/thetachi_njit",
+			"icon": "/assets/instagram.png"
+		},
+		"nationals": {
+			"url": "https://www.thetachi.org/epsilon-psi",
+			"icon": "/assets/internet.png"
+		}
+	},
+	"alumniSocialMedia": {
+		"facebook": {
+			"url": "https://www.facebook.com/groups/ThetachiEpsilonpsialumni/",
+			"icon": "/assets/facebook.png"
+		},
+		"email": {
+			"url": "oxnjitalumni63@gmail.com",
+			"icon": "/assets/email.png"
+		}
 	}
 }
